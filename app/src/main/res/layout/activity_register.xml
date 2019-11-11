@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Activity.RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sample" >
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/RegidScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvUserType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:text="UserType"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <!--            <TextView-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginTop="@dimen/_180sdp"-->
+                <!--                android:layout_marginBottom="@dimen/_30sdp"-->
+                <!--                android:background="@drawable/cricle_border_fill_background"-->
+                <!--                android:fontFamily="@font/raleway_semibold"-->
+                <!--                android:gravity="center"-->
+                <!--                android:padding="@dimen/_10sdp"-->
+                <!--                android:text="Register Now"-->
+                <!--                android:textColor="@color/black2"-->
+                <!--                android:textSize="@dimen/_20sdp" />-->
+
+                <!--            <com.mikhaellopez.circularimageview.CircularImageView-->
+                <!--                android:id="@+id/ImgRegisProfile"-->
+                <!--                android:layout_width="150dp"-->
+                <!--                android:layout_height="150dp"-->
+                <!--                android:layout_marginTop="@dimen/_180sdp"-->
+                <!--                android:layout_marginBottom="@dimen/_5sdp"-->
+                <!--                android:src="@drawable/profileimg"-->
+                <!--                app:civ_border_color="#BCffffff"-->
+                <!--                app:civ_border_width="10dp" />-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/ImgRegisProfile"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="@dimen/_180sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_70sdp"
+                        android:src="@drawable/profileimg"
+                        app:civ_border_color="#BCffffff"
+                        app:civ_border_width="10dp" />
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/img_plus"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginRight="@dimen/_150sdp"
+                        android:layout_alignBottom="@id/ImgRegisProfile"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_plus"
+                        app:civ_shadow="true"
+                        app:civ_shadow_radius="1" />
+                </RelativeLayout>
+
+
+
+
+                <!--            <android.support.design.widget.TextInputLayout-->
+                <!--                android:id="@+id/inputname"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginTop="@dimen/_50sdp"-->
+                <!--                android:textColorHint="@android:color/black">-->
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/etname"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:backgroundTint="@color/black"-->
+                <!--                    android:hint="Enter Name"-->
+                <!--                    android:drawableLeft="@drawable/ic_person_black_24dp"-->
+                <!--                    android:drawablePadding="@dimen/_10sdp"-->
+                <!--                    android:inputType="textPersonName"-->
+                <!--                    android:singleLine="true"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:layout_marginLeft="@dimen/_20sdp"-->
+                <!--                    android:layout_marginRight="@dimen/_30sdp"-->
+                <!--                    android:textColorHint="@color/black" />-->
+                <!--            </android.support.design.widget.TextInputLayout>-->
+
+
+
+                <!--            <android.support.design.widget.TextInputLayout-->
+                <!--                android:id="@+id/inputemail"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:textColorHint="@android:color/black">-->
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/etEmail"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:backgroundTint="@color/black"-->
+                <!--                    android:hint="Enter Email"-->
+                <!--                    android:inputType="textEmailAddress"-->
+                <!--                    android:drawablePadding="@dimen/_10sdp"-->
+                <!--                    android:drawableLeft="@drawable/ic_email_black_24dp"-->
+                <!--                    android:layout_marginLeft="@dimen/_20sdp"-->
+                <!--                    android:layout_marginRight="@dimen/_30sdp"-->
+                <!--                    android:singleLine="true"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textColorHint="@color/black" />-->
+                <!--            </android.support.design.widget.TextInputLayout>-->
+
+                <!--            <android.support.design.widget.TextInputLayout-->
+                <!--                android:id="@+id/inputmobile"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:textColorHint="@android:color/black">-->
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/etMobile"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:backgroundTint="@color/black"-->
+                <!--                    android:hint="Enter Mobile No"-->
+                <!--                    android:inputType="numberDecimal"-->
+                <!--                    android:singleLine="true"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:drawablePadding="@dimen/_10sdp"-->
+                <!--                    android:drawableLeft="@drawable/ic_phone_android_black_24dp"-->
+                <!--                    android:layout_marginLeft="@dimen/_20sdp"-->
+                <!--                    android:layout_marginRight="@dimen/_30sdp"-->
+                <!--                    android:textColorHint="@color/black" />-->
+                <!--            </android.support.design.widget.TextInputLayout>-->
+
+                <!--            <android.support.design.widget.TextInputLayout-->
+                <!--                android:id="@+id/inputPass"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:textColorHint="@android:color/black">-->
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/etPass"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:backgroundTint="@color/black"-->
+                <!--                    android:hint="Enter Password"-->
+                <!--                    android:drawableLeft="@drawable/ic_lock_black_24dp"-->
+                <!--                    android:inputType="textPassword"-->
+                <!--                    android:drawablePadding="@dimen/_10sdp"-->
+                <!--                    android:layout_marginLeft="@dimen/_20sdp"-->
+                <!--                    android:layout_marginRight="@dimen/_30sdp"-->
+                <!--                    android:singleLine="true"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textColorHint="@color/black" />-->
+                <!--            </android.support.design.widget.TextInputLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Register Code "
+                        android:textSize="@dimen/_15sdp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        />
+
+
+
+                    <EditText
+                        android:id="@+id/etRegisCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:hint="XXXXXXXX"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:backgroundTint="@color/grey_40"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey_40" />
+
+
+                    <TextView
+                        android:id="@+id/TxtErrorMsg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        />
+
+
+                </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/BtnRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_75sdp"
+                    android:layout_marginRight="@dimen/_80sdp"
+                    android:background="@drawable/corner_round_border"
+                    android:text="Register"
+                    android:textColor="#00a0a8" />
+
+                <!--            <ImageView-->
+                <!--                android:id="@+id/BtnRegister"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="@dimen/_70sdp"-->
+                <!--                android:padding="@dimen/_15sdp"-->
+                <!--                android:gravity="center"-->
+                <!--                android:layout_marginTop="@dimen/_20sdp"-->
+                <!--                android:src="@drawable/regislogo"/>-->
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pg_bar"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</LinearLayout>
