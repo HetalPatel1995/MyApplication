@@ -1,9 +1,12 @@
 package com.example.admin.myapplication.Activity;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -58,7 +61,24 @@ public class HomePage extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            final AlertDialog.Builder bui = new AlertDialog.Builder(this);
+            bui.setTitle("Are you sure to exit?");
+            bui.setMessage("Thanks for using this app.");
+            bui.setCancelable(false);
+            bui.setPositiveButton("Exit", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    finishAffinity();
+                }
+            });
+            bui.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+            AlertDialog alert11 = bui.create();
+            alert11.show();
         }
     }
 
@@ -107,10 +127,37 @@ public class HomePage extends AppCompatActivity
 
         } else if (id == R.id.nav_send) {
 
+        }else if (id==R.id.nav_Logout){
+            initLogout();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+    private void initLogout() {
+
+        final android.support.v7.app.AlertDialog.Builder bui = new android.support.v7.app.AlertDialog.Builder(this);
+        bui.setTitle("Are you sure to Logout?");
+        bui.setCancelable(false);
+        bui.setPositiveButton("logout", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which)
+            {
+                startActivity(new Intent(HomePage.this,LoginActivity.class));
+                finish();
+            }
+        });
+        bui.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        android.support.v7.app.AlertDialog alert11 = bui.create();
+        alert11.show();
+
+    }
 }
+
+
