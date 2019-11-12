@@ -94,7 +94,7 @@ public class HomePage extends AppCompatActivity
             // Handle the camera action
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction()
-                    .replace(R.id.frame_layout, homeView_fragment)
+                    .replace(R.id.homelayout, homeView_fragment)
                     .addToBackStack(null)
                     .commit();
         } else if (id == R.id.nav_profile) {

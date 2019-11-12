@@ -113,7 +113,7 @@ recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
                         "3 BHK flat 1615 sqft",
                         "Satelite Ahmedabad",
                         "Sheetal appt",
-                        R.drawable.home1));
+                        R.drawable.h4));
 
         propertyList.add(
                 new Property(
@@ -122,7 +122,7 @@ recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
                         "Plot",
                         "paldi Ahmedabad",
                         "Blis houses",
-                        R.drawable.home2));
+                        R.drawable.h2));
 
         propertyList.add(
                 new Property(
@@ -130,8 +130,33 @@ recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
                         "₹ 62 lac",
                         "3 BHK Flat",
                         "South Bhopal Ahmedabad",
+                        "nandi house",
+                        R.drawable.h3));
+
+        propertyList.add(
+                new Property(
+                        1,
+                        "₹ 62 lac",
+                        "3 BHK Flat",
+                        "South Bhopal Ahmedabad",
+                        "ashoka pelace",
+                        R.drawable.h1));
+        propertyList.add(
+                new Property(
+                        1,
+                        "₹ 62 lac",
+                        "3 BHK Flat",
+                        "South Bhopal Ahmedabad",
+                        "bilipatra nivas",
+                        R.drawable.h5));
+        propertyList.add(
+                new Property(
+                        1,
+                        "₹ 62 lac",
+                        "3 BHK Flat",
+                        "South Bhopal Ahmedabad",
                         "Aruna Appartment",
-                        R.drawable.home3));
+                        R.drawable.h6));
 
 
        propertyAdapter=new PropertyAdapter(getActivity(),propertyList);
